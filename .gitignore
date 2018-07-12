@@ -1,2 +1,2 @@
-# config
-$ /includes/db.php
+# ignore db config
+/includes/db.php
