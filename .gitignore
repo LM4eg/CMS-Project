@@ -1,2 +1,5 @@
 # ignore db config
 /includes/db.php
+
+# ignore pictures
+/images/*
