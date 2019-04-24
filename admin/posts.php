@@ -27,8 +27,8 @@
                             include "includes/add_post.php";
                             break;
 
-                        case '456';
-                            echo 'good 456';
+                        case 'edit_post';
+                            include "includes/edit_post.php";
                             break;
 
                         case '678';
@@ -38,6 +38,8 @@
                         default:
                             include "includes/view_all_posts.php";
                     }
+
+
                     ?>
 
                 </div>
