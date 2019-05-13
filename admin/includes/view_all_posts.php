@@ -58,9 +58,10 @@
 </table>
 
 <?php
-if (isset($_GET['delete'])) {
-    $the_post_id = $_GET['delete'];
+if (isset($_GET['delete_post'])) {
+    $the_post_id = $_GET['delete_post'];
     $query = "DELETE FROM posts WHERE post_id = {$the_post_id}";
     $delete_query = mysqli_query($connection, $query);
+    header("Location: posts.php");
 }
 ?>
