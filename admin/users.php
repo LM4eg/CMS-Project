@@ -24,7 +24,7 @@
 
                     switch ($source) {
                         case 'add_user';
-                            include "includes/add_add.php";
+                            include "includes/add_user.php";
                             break;
 
                         case 'edit_user';
