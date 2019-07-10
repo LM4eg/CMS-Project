@@ -9,6 +9,7 @@
         <th>Role</th>
         <th>Promote to</th>
         <th>Decrease to</th>
+        <th>Edit</th>
         <th>Delete?</th>
     </tr>
     </thead>
@@ -55,6 +56,7 @@
 
         echo "<td><a href='users.php?change_to_admin={$user_id}'>admin</a></td>";
         echo "<td><a href='users.php?change_to_sub={$user_id}'>subscriber</a></td>";
+        echo "<td><a href='users.php?source=edit_user&edit_user={$user_id}'>Edit user</a></td>";
         echo "<td><a href='users.php?delete={$user_id}'>Delete user</a></td>";
         echo "</tr>";
     }
