@@ -20,11 +20,9 @@ if (isset($_POST['create_user'])) {
     $create_user_query = mysqli_query($connection, $query);
 
     confirmQuery($create_user_query);
+    echo "User has been created: " . "<a href='users.php'>go back to users</a>";
 }
-
-
 ?>
-
 
 <form action="" method="post" enctype="multipart/form-data">
     <div class="form-group">
