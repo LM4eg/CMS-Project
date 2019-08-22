@@ -33,7 +33,7 @@ if (isset($_POST['update_post'])) {
     move_uploaded_file($post_image_temp,"../images/$post_image");
 
     if (empty($post_image)) {
-        $query = "SELECT * from posts WHERE post_id = $the_post_id ";
+        $query = "SELECT * from posts WHERE post_id = $the_post_id";
         $select_image = mysqli_query($connection, $query);
         while ($row = mysqli_fetch_array($select_image)) {
             $post_image = $row['post_image'];
@@ -87,7 +87,7 @@ if (isset($_POST['update_post'])) {
     </div>
     <div class="form-group">
         <label for="post_category">Post status</label>
-        <select name="" id="post_status">
+        <select name="post_status" id="">
             <option value='<?php echo $post_status; ?>'><?php echo $post_status; ?></option>
             <?php
             if($post_status == 'draft'){
@@ -107,7 +107,7 @@ if (isset($_POST['update_post'])) {
     </div>
     <div class="form-group">
         <label for="post_content">Post content</label>
-        <textarea class="form-control" name="post_content" id="" cols="30"
+        <textarea class="form-control" name="post_content" id="body" cols="30"
                   rows="10"><?php echo $post_content; ?></textarea>
     </div>
     <div class="form-group">
