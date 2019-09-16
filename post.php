@@ -32,7 +32,7 @@
                 ?>
 
                 <h2>
-                    <a href="#"><?php echo $post_title; ?></a>
+                    <?php echo $post_title; ?>
                 </h2>
                 <p class="lead">
                     by <a href="index.php"><?php echo $post_author; ?></a>
